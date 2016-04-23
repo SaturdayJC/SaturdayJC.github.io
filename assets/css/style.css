@@ -4,6 +4,7 @@ body{
     background-color: #FFF;
 }
 
+/* Generating the site header-cum-background image for the home page */
 .home-page-container header{
     margin: 0;
     padding-top: 5px;
@@ -130,3 +131,4 @@ body{
         }
     }
 }
+
