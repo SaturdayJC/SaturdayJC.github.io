@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0px;
+    background-color: #FFF;
+}
+
+.home-page-container header{
+    margin: 0;
+    padding-top: 5px;
+    overflow: auto;
+}
+
+/* Mobile */
+@media (max-width: 425px){
+    .home-page-container header .site-header-container{
+        background-image: url(../img/mobile/Site-Logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 55.312%;
+    }
+    /* 2x dpi */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){ 
+        .home-page-container header .site-header-container{
+            background-image: url(../img/mobile/Site-Logo@2x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: 55.312%;
+        }
+        
+    }
+    /* 3x dpi*/
+    @media (max-width: 425px), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 326dpi)
+    { 
+        .home-page-container header .site-header-container{
+            background-image: url(../img/mobile/Site-Logo@3x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: 55.312%;
+        }
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 426px) and (max-width: 1023px){
+    .home-page-container header .site-header-container{
+        background-image: url(../img/tablet/Site-Logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 33.984%;
+    }
+    /* 2x dpi */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    { 
+        .home-page-container header .site-header-container{
+            background-image: url(../img/tablet/Site-Logo@2x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: 33.984%;
+        }
+    }
+    /* 3x dpi*/
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 326dpi)
+    { 
+        .home-page-container header .site-header-container{
+            background-image: url(../img/tablet/Site-Logo@3x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: 33.984%;
+        }
+    }
+}
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1439px){
+    .home-page-container header .site-header-container{
+        background-image: url(../img/laptop/Site-Logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 33.49%;
+
+    }
+    /* 2x dpi */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    { 
+        .home-page-container header .site-header-container{
+            background-image: url(../img/laptop/Site-Logo@2x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: 33.49%;
+        }
+    }
+    /* 3x dpi*/
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 326dpi)
+    { 
+        .home-page-container header .site-header-container{
+            background-image: url(../img/laptop/Site-Logo@3x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: 33.49%;
+        }
+    }
+}
+
+/* Desktop */
+@media (min-width: 1440){
+    .home-page-container header .site-header-container{
+        background-image: url(../img/desktop/Site-Logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 23.819%;
+    }
+    /* 2x dpi */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    { 
+        .home-page-container header .site-header-container{
+            background-image: url(../img/desktop/Site-Logo@2x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: 23.819%;
+        }
+    }
+    /* 3x dpi*/
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 326dpi)
+    { 
+        .home-page-container header .site-header-container{
+            background-image: url(../img/desktop/Site-Logo@3x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: 23.819%;
+        }
+    }
+}
