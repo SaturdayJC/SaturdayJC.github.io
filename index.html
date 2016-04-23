@@ -3,22 +3,7 @@ layout: default
 ---
 
 <div class="home-page-container">
-    <header>
-        <div class="site-header-container"></div>
-    </header>
-    <div class="articles-container">
-        <div class="featured-articles-container">
-            <div class="main-hero-featured-articles-container"></div>
-            <div class="hero-featured-articles-container"></div>
-        </div>
-        <div class="archived-articles-container"></div>
-    </div>
-    <footer>
-        <div class="footer-container">
-            <div class="Credits">
-                <p>Credits: Site header created using icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="Optional("http://file005.flaticon.com/downloads/license/license.pdf")" title="Optional("Flaticon Basic")">Optional("Flaticon Basic")</a></p>  
-            </div>
-            <div class="About Us"></div>
-        </div>
-    </footer>
+    <header>{% include home-page-header.html %}</header>
+    <main>{% include home-page-articles.html %}</main>
+    <footer>{% include home-page-footer.html %}</footer>
 </div>
