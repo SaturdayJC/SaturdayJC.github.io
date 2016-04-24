@@ -181,7 +181,7 @@ a:hover{
     margin: auto;
     text-align: center;
     padding: 20px auto 20px;
-    position: absolute;
-    bottom: 0px; left: 0px; right: 0px;
     font-size: 0.75em;
+    bottom: 0px; left: 0px; right: 0px;
+    
 }
