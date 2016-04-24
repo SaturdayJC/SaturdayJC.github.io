@@ -73,10 +73,15 @@ body{
 }
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px){
+    .home-page-container{
+        max-width: 1024px;
+        margin: 0px auto;
+    }
     .home-page-container header .site-header-container{
         background-image: url(../img/laptop/Site-Logo.png);
         background-repeat: no-repeat;
         background-size: contain;
+        max-width: 1024px;
         padding-bottom: 33.49%;
 
     }
@@ -87,6 +92,7 @@ body{
             background-image: url(../img/laptop/Site-Logo@2x.png);
             background-repeat: no-repeat;
             background-size: contain;
+            max-width: 1024px;
             padding-bottom: 33.49%;
         }
     }
@@ -97,6 +103,7 @@ body{
             background-image: url(../img/laptop/Site-Logo@3x.png);
             background-repeat: no-repeat;
             background-size: contain;
+            max-width: 1024px;
             padding-bottom: 33.49%;
         }
     }
@@ -104,10 +111,15 @@ body{
 
 /* Desktop */
 @media (min-width: 1440){
+    .home-page-container{
+        max-width: 1440px;
+        margin: 0px auto;
+    }
     .home-page-container header .site-header-container{
         background-image: url(../img/desktop/Site-Logo.png);
         background-repeat: no-repeat;
         background-size: contain;
+        max-width: 1440px;
         padding-bottom: 23.819%;
     }
     /* 2x dpi */
@@ -117,6 +129,7 @@ body{
             background-image: url(../img/desktop/Site-Logo@2x.png);
             background-repeat: no-repeat;
             background-size: contain;
+            max-width: 1440px;
             padding-bottom: 23.819%;
         }
     }
@@ -127,6 +140,7 @@ body{
             background-image: url(../img/desktop/Site-Logo@3x.png);
             background-repeat: no-repeat;
             background-size: contain;
+            max-width: 1440px;
             padding-bottom: 23.819%;
         }
     }
