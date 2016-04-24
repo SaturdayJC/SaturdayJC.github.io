@@ -1,10 +1,4 @@
-body{
-    margin: 0;
-    padding: 0px;
-    background-color: #FFF;
-    font-family: roboto;
-}
-
+/* Header Section */
 /* Generating the site header-cum-background image for the home page */
 .home-page-container header{
     margin: 0;
@@ -147,9 +141,17 @@ body{
     }
 }
 
-.Credits{
-    font-size: 8pt;
-    text-align: center;
+/* Body Section */
+body{
+    margin: 0;
+    padding: 0px;
+    background-color: #FFF;
+    font-family: roboto;
+}
+
+h1{
+    font-family: Abril Fatface;
+    font-size: 2em;
 }
 
 a:link, a:visited, a:active{
@@ -159,4 +161,23 @@ a:link, a:visited, a:active{
 
 a:hover{
     text-decoration: underline;
+}
+
+.placeholder{
+    font-size: 1.75em;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.placeholder p{
+    font-size: 0.75em;
+}
+
+
+/* Footer Section */
+.Credits{
+    font-size: 0.6em;
+    text-align: center;
 }
