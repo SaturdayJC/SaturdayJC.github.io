@@ -178,6 +178,9 @@ a:hover{
 
 /* Footer Section */
 .Credits{
-    font-size: 0.7em;
+    margin: auto;
     text-align: center;
+    padding: 20px auto 20px;
+    position: absolute;
+    bottom: 0px; left: 0px; right: 0px;
 }
