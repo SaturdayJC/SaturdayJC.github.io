@@ -1,0 +1,17 @@
+{% for post in site.posts limit:1 %}
+<a href="{{site.baseurl}}{{post.url}}">
+  <article class="featured-article">
+    <h2>{{post.title}}</h2>
+    <p class="author">{{post.author}}</p>
+    <p class="post-desctiption">{{post.description}}</p>
+  </article>
+</a>
+{% endfor %}
+
+{% for post in site.posts offset:1 limit 2 %}
+<article class="">
+  <ul>
+    <li></li>
+  </ul>
+</article>
+{% endfor %}

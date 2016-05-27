@@ -1,194 +1,137 @@
-/* Header Section */
-/* Generating the site header-cum-background image for the home page */
-.home-page-container header{
-    margin: 0;
+body, h1, h2 {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+body {
+  background-color: #FFF;
+  font-family: roboto;
+  font-size: 18px;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: underline;
+  color: #41B3D7;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #41B3D7;
+}
+
+/* Styles for the Home Page */
+/* Styles for the Header section. Contains the Logo and the navigation bar */
+.home-page-header h1 {
+  text-indent: -9999px;
+  background-image: url(../img/site-logo.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: 5px;
+  background-size: contain;
+}
+
+.home-page-nav {
+  margin-top: 5px;
+}
+
+.home-page-nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0px;
+  padding: 5px;
+}
+
+.home-page-nav ul li {
+  display: inline;
+}
+
+.home-page-nav ul li a {
+  color: #4A4A4A;
+  text-decoration: none;
+  font-family: roboto condensed;
+  padding: 3px 3px;
+  border-radius: 3px;
+}
+
+.home-page-nav ul li a:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #41B3D7;
+}
+
+@media (max-width: 425px) {
+  .home-page-header h1{
+    height: 30px;
+    padding: 0px 3px;
+  }
+  .home-page-nav ul li a {
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 426px) {
+  .home-page-header h1{
+    height: 50px;
+  }
+}
+
+/* Styles for the post section */
+/* Styles for the header section. Contains the Logo and the social media icon */
+.article-page-header, .site-logo, h1, ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Style for Mobile */
+@media (max-width: 425px) {
+  .article-page-header .site-logo h1 {
+    text-indent: -9999px;
+    background-image: url(../img/site-logo.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 5px;
+    background-size: contain;
+    float: left;
     padding-top: 5px;
-    overflow: auto;
-}
-
-/* Body Section */
-body{
-    margin: 0;
+    width: 75%;
+  }
+  .article-page-header ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
     padding: 0px;
-    background-color: #FFF;
-    font-family: roboto;
+    padding-right: 2.5px;
+  }
+  .article-page-header ul li {
+    display: inline;
+  }
+  .social-media-icons {
+    float: right;
+    height: 30px;
+    padding: 5px 2px;
+  }
 }
 
-h1{
-    font-family: Abril Fatface;
-    font-size: 2em;
-}
-
-a:link, a:visited, a:active{
-    color: #4F7177;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-.placeholder{
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 20px 20px;
-    font-size: 1em;
+@media (min-width: 426px) {
+  .article-page-header ul {
+    list-style-type: none;
     text-align: center;
-}
-
-.placeholder p{
-    font-size: 1em;
-}
-
-
-/* Footer Section */
-.Credits{
-    margin: auto;
-    text-align: center;
-    padding: 20px auto 20px;
-    font-size: 0.75em;
-    bottom: 0px; left: 0px; right: 0px;
-}
-
-/* Ajusting styles according to viewport size */
-/* Mobile */
-@media (max-width: 425px){
-    .home-page-container header .site-header-container{
-        background-image: url(../img/mobile/Site-Logo.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-bottom: 55.312%;
-    }
-    /* 2x dpi images */
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){ 
-        .home-page-container header .site-header-container{
-            background-image: url(../img/mobile/Site-Logo@2x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            padding-bottom: 55.312%;
-        }
-        
-    }
-    /* 3x dpi images */
-    @media (max-width: 425px), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 326dpi)
-    { 
-        .home-page-container header .site-header-container{
-            background-image: url(../img/mobile/Site-Logo@3x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            padding-bottom: 55.312%;
-        }
-    }
-}
-
-/* Tablet */
-@media (min-width: 426px) and (max-width: 1023px){
-    .home-page-container header .site-header-container{
-        background-image: url(../img/tablet/Site-Logo.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-bottom: 33.984%;
-    }
-    /* 2x dpi images */
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
-    { 
-        .home-page-container header .site-header-container{
-            background-image: url(../img/tablet/Site-Logo@2x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            padding-bottom: 33.984%;
-        }
-    }
-    /* 3x dpi images */
-    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 326dpi)
-    { 
-        .home-page-container header .site-header-container{
-            background-image: url(../img/tablet/Site-Logo@3x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            padding-bottom: 33.984%;
-        }
-    }
-}
-
-/* Laptop */
-@media (min-width: 1024px) and (max-width: 1439px){
-    .home-page-container{
-        max-width: 1024px;
-        margin: 0px auto;
-    }
-    .home-page-container header .site-header-container{
-        background-image: url(../img/laptop/Site-Logo.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        max-width: 1024px;
-        padding-bottom: 33.49%;
-
-    }
-     .Credits{
-        position: absolute;
-    }
-    /* 2x dpi images */
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
-    { 
-        .home-page-container header .site-header-container{
-            background-image: url(../img/laptop/Site-Logo@2x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            max-width: 1024px;
-            padding-bottom: 33.49%;
-        }
-    }
-    /* 3x dpi images */
-    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 326dpi)
-    { 
-        .home-page-container header .site-header-container{
-            background-image: url(../img/laptop/Site-Logo@3x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            max-width: 1024px;
-            padding-bottom: 33.49%;
-        }
-    }
-    .
-}
-
-/* Desktop */
-@media (min-width: 1440px){
-    .home-page-container{
-        max-width: 1440px;
-        margin: 0px auto;
-    }
-    .home-page-container header .site-header-container{
-        background-image: url(../img/desktop/Site-Logo.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        max-width: 1440px;
-        padding-bottom: 23.819%;
-    }
-    .Credits{
-        position: absolute;
-    }
-    /* 2x dpi images */
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
-    { 
-        .home-page-container header .site-header-container{
-            background-image: url(../img/desktop/Site-Logo@2x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            max-width: 1440px;
-            padding-bottom: 23.819%;
-        }
-    }
-    /* 3x dpi images */
-    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 326dpi)
-    { 
-        .home-page-container header .site-header-container{
-            background-image: url(../img/desktop/Site-Logo@3x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            max-width: 1440px;
-            padding-bottom: 23.819%;
-        }
-    }
+  }
+  .article-page-header ul li {
+    display: inline-block;
+  }
+  .article-page-header .site-logo h1 {
+    text-indent: -9999px;
+    background-image: url(../img/site-logo.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    width: 360px;
+    margin-right: 15px;
+  }
+  .social-media-icons {
+    height: 30px;
+    margin-top: 5px;
+  }
 }

@@ -1,9 +1,9 @@
 ---
 layout: default
+description:
 ---
 
-<div class="home-page-container">
-    <header>{% include home-page-header.html %}</header>
-    <main>{% include home-page-articles.html %}</main>
-    <footer>{% include home-page-footer.html %}</footer>
-</div>
+<a href="/"><header class="home-page-header">{% include header.html %}</header></a>
+<nav class="home-page-nav">{% include about-nav.html %}</nav>
+<main>{% include articles.html %}</main>
+<footer>{% include footer.html %}</footer>
