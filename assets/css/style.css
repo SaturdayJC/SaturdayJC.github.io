@@ -83,6 +83,14 @@ a:hover {
   padding: 0px;
 }
 
+.article-page-header a {
+  text-decoration: none;
+}
+.article-page-header a:hover {
+  text-decoration: none;
+  background-color: #FFF;
+}
+
 /* Style for Mobile */
 @media (max-width: 425px) {
   .article-page-header .site-logo h1 {
@@ -113,6 +121,7 @@ a:hover {
   }
 }
 
+/* Style for tablets and desktops */
 @media (min-width: 426px) {
   .article-page-header ul {
     list-style-type: none;
