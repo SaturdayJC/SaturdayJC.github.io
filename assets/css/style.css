@@ -5,17 +5,20 @@ body, h1, h2 {
 
 body {
   background-color: #FFF;
+
   font-family: roboto;
   font-size: 18px;
 }
 
 a:link, a:visited, a:active {
   text-decoration: underline;
+
   color: #41B3D7;
 }
 
 a:hover {
   text-decoration: none;
+
   color: #FFF;
   background-color: #41B3D7;
 }
@@ -23,11 +26,13 @@ a:hover {
 /* Styles for the Home Page */
 /* Styles for the Header section. Contains the Logo and the navigation bar */
 .home-page-header h1 {
+  margin-top: 5px;
+
   text-indent: -9999px;
+
   background-image: url(../img/site-logo.svg);
   background-repeat: no-repeat;
   background-position: top;
-  margin-top: 5px;
   background-size: contain;
 }
 
@@ -36,10 +41,12 @@ a:hover {
 }
 
 .home-page-nav ul {
-  list-style-type: none;
-  text-align: center;
   margin: 0px;
   padding: 5px;
+
+  list-style-type: none;
+
+  text-align: center;
 }
 
 .home-page-nav ul li {
@@ -47,15 +54,19 @@ a:hover {
 }
 
 .home-page-nav ul li a {
-  color: #4A4A4A;
-  text-decoration: none;
-  font-family: roboto condensed;
   padding: 3px 3px;
+
+  text-decoration: none;
+
+  color: #4A4A4A;
   border-radius: 3px;
+
+  font-family: roboto condensed;
 }
 
 .home-page-nav ul li a:hover {
   text-decoration: none;
+
   color: #FFF;
   background-color: #41B3D7;
 }
@@ -88,34 +99,41 @@ a:hover {
 }
 .article-page-header a:hover {
   text-decoration: none;
+
   background-color: #FFF;
 }
 
 /* Style for Mobile */
 @media (max-width: 425px) {
   .article-page-header .site-logo h1 {
+    float: left;
+
+    width: 75%;
+    margin-left: 5px;
+    padding-top: 5px;
+
     text-indent: -9999px;
+
     background-image: url(../img/site-logo.svg);
     background-repeat: no-repeat;
     background-position: left;
-    margin-left: 5px;
     background-size: contain;
-    float: left;
-    padding-top: 5px;
-    width: 75%;
   }
   .article-page-header ul {
-    list-style-type: none;
-    text-align: center;
     margin: 0px;
     padding: 0px;
     padding-right: 2.5px;
+
+    list-style-type: none;
+
+    text-align: center;
   }
   .article-page-header ul li {
     display: inline;
   }
   .social-media-icons {
     float: right;
+
     height: 30px;
     padding: 5px 2px;
   }
@@ -125,19 +143,22 @@ a:hover {
 @media (min-width: 426px) {
   .article-page-header ul {
     list-style-type: none;
+
     text-align: center;
   }
   .article-page-header ul li {
     display: inline-block;
   }
   .article-page-header .site-logo h1 {
+    width: 360px;
+    margin-right: 15px;
+
     text-indent: -9999px;
+
     background-image: url(../img/site-logo.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
-    width: 360px;
-    margin-right: 15px;
   }
   .social-media-icons {
     height: 30px;
